@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "About";
+}
+
+@*@model IEnumerable<Geo_starter.Models.car>*@
+
+<h2>About</h2>
+@if (ViewBag.inform != null)
+{
+    @ViewBag.inform
+}
+else
+{
+<form action="/Home/About" method="post">
+    <input type="text" name="Name" placeholder="სახელი" />
+    <br /><br />
+    <input type="text" name="Surname" placeholder="გვარი" />
+    <br /><br />
+    <button type="submit">Log in</button>
+</form>
+}
+
+
+<h4 style="display:flex;justify-content: flex-end;">@ViewBag.text1</h4>
+
+<table class="table table-bordered">
+    <tr>
+        <th style="font-size:20px;text-align:center;">Model</th>
+        <th style="font-size:20px;text-align:center;">Year</th>
+    </tr>
+    <tr>
+        <td>@ViewBag.Name</td>
+        <td>@ViewBag.Surname</td>
+    </tr>
+    @*@foreach (var item in Model)
+    {
+        <tr>
+            <td style="font-size:15px;text-align:center;">@item.Model</td>
+            <td style="font-size:15px;text-align:center;">@item.Year</td>
+        </tr>
+    }*@
+</table>

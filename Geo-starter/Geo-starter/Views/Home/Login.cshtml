@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellcome  @ViewBag.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link rel="icon" href="~/Content/icon/MGC.ico" />
+    <link rel="stylesheet" href="~/Content/StyleSheet1.css" />
+    <link rel="stylesheet" href="~/Content/font.css" />
+    <link rel="stylesheet" href="~/Content/style.css" />
+</head>
+<body class="body">
+    <div class="form-div">
+        <form action="/Home/Login" method="post">
+            <div class="form-group">
+                <input class="form-control" type="text" name="name" placeholder="სახელი" />
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="surname" placeholder="გვარი" />
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="email" name="mail" placeholder="ელ. ფოსტის მისამართი" />
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="number" name="age" placeholder="ასაკი" />
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="job" placeholder="სამუშაო ადგილი" />
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="language" placeholder="პროგრამირების ენა" />
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="phone" placeholder="საკონტაქტო ნომერი" />
+            </div>
+            <div class="form-group" style="display:inline-block; margin-right: 34px;">
+                <button type="submit" class="btn btn-success">შექმნა</button>
+            </div>
+            <div class="form-group" style="display:inline-block;">
+                <button type="reset" class="btn btn-danger">გადატვირთვა</button>
+            </div>
+        </form>
+        <h2 style="color:red;">@ViewBag.error</h2>
+        <a href="/Home/List">სიაზე გადასვლა</a>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Title';
+    src: url('../fonts/title/title.eot') format('embedded-opentype'),
+         url('../fonts/title/title.woff2') format('woff2'),
+         url('../fonts/title/title.woff') format('woff'),
+         url('../fonts/title/title.ttf') format('truetype'),
+         url('../fonts/title/title.svg#title') format('svg');
+}
+@font-face {
+    font-family: 'ALKDots';
+    src: url('../fonts/alkdots-webfont.eot') format('embedded-opentype'),
+         url('../fonts/kube/alkdots-webfont.woff2') format('woff2'),
+         url('../fonts/kube/alkdots-webfont.woff') format('woff'),
+         url('../fonts/kube/alkdots-webfont.ttf') format('truetype'),
+         url('../fonts/kube/alkdots-webfont.svg#alkdotsregular') format('svg');
+}
